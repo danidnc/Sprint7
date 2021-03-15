@@ -1,13 +1,13 @@
 import React from "react";
 
-import lineasTexto from "./Texto.json"
+import dataTexto from "./Texto.json"
 import Texto from "./Texto"
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      texto: lineasTexto
+      texto: dataTexto
     }
   }
   render() {
