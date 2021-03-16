@@ -37,14 +37,14 @@ class App extends React.Component {
 
   render() {
     //const lineas = this.state.texto.map(linea => <Texto key={linea} linea={linea} />)
-    console.log(this.state.idLinea)
+    //console.log(this.state.idLinea)
     return (
       <div>
         <ContenedorBotones>
           <Boton onClick={this.manejadorClickAnterior} title="Linea Anterior" />
           <Boton onClick={this.manejadorClickSiguiente} title="Siguiente Linea" />
         </ContenedorBotones>
-        <Texto linea={this.state.texto[this.state.idLinea]} />
+        <Texto linea={this.state.texto[this.state.idLinea]} id={this.state.idLinea} texto={this.state.texto} />
       </div>
     )
   }
